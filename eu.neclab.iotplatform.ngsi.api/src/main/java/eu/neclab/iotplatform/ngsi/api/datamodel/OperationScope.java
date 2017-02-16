@@ -66,10 +66,10 @@ import eu.neclab.iotplatform.ngsi.api.serialization.json.MetadataValueDeserializ
 @XmlAccessorType(XmlAccessType.FIELD)
 public class OperationScope extends NgsiStructure {
 
-	@XmlElement(name = "scopeType", required = true)
+	@XmlElement(name = "type", required = true)
 	private String scopeType = null;
 
-	@XmlElement(name = "scopeValue", required = true)
+	@XmlElement(name = "value", required = true)
 	@JsonSerialize(using = MetadataObjectValueSerializer.class)
 	@JsonDeserialize(using = MetadataValueDeserializer.class)
 	private Object scopeValue = null;
